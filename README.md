@@ -20,4 +20,38 @@ puts "10です"
 
 end
 
+puts "おはようさんです"
+puts 10 + 10
+
 ```
+jQuery復習
+
+これを使うことで動きのあるビューを作成可能
+
+script.jsで
+$('セレクタ').メソッド(引数);
+例:$('h1').hide();  セレクタでオブジェクト化し
+
+HTMLのタグに名前をつけるにはclassの他にidがある（idは一つのページで複数回使えない)
+<h1 id="list"></h1>
+
+セレクタにするには…
+stylesheet.cssで idには# (#list{記述}),classには.をつける(.list{記述})
+script.jsで「$('#list').hide();」「$('.list').hide();」
+
+とすること
+
+css
+displayプロパティとは
+stylesheet.cssで　
+
+img{
+  display: none;
+}
+
+とすることで隠すことが可能
+だが、script.jsで
+
+$('img').show();
+
+とすることで表示させることができる。　※メソッド slideIn　slideDown でもnoneにした要素を表示可能
