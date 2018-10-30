@@ -1,7 +1,7 @@
 ◉投稿の編集・削除
 
 ⑴投稿編集ページを作る
-・「routes.rb」で　get "posts/:id/edit" => "posts#edit"
+```ruby・「routes.rb」で　get "posts/:id/edit" => "posts#edit"
 ※「:id」とすることで編集したい投稿を表示できるようになる。
 ・「posts_controller.rb」で「edit」アクションを作成
 ・一覧ページにリンクを作成する
@@ -22,3 +22,4 @@
 ・updateアクションをいじる
 　updateアクションではビューを用意しない。
 　→redirect_to("/posts/index")を記述する。
+```
